@@ -2,12 +2,35 @@ package gr.aueb.cf.ch12;
 
 /**
  * very simple data class
+ * Data, Default constructor kaι getters
+ * και setters με convention
+ * ονομάζονται JavaBean.
  */
 
 public class Student {
     public int id;
     public String firstname;
     public String lastname;
+
+    /**
+     * Default constructor
+     */
+    public Student() {
+
+    }
+
+    /**
+     * Overloaded constructor
+     *
+     * @param id
+     * @param firstname
+     * @param lastname
+     */
+    public Student(int id, String firstname, String lastname) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
 
     public int getId() {
         return id;
