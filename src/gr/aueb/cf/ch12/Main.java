@@ -13,5 +13,6 @@ public class Main {
         System.out.println("ID: " + alice.id);                  // get id
         System.out.println("Firstname " + alice.firstname);     // get firstname
         System.out.println("Lastname " + alice.lastname);       // get lastname
+
     }
 }
