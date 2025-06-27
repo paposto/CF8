@@ -7,7 +7,13 @@ public class Main {
         Student alice = new Student();                // id -> 0, firstname -> null, lastname -> null
         Student bob = new Student(2, "Bob", "D."); // id -> 2, firstname -> Bob, lastname -> D.
 
-        alice.setID(10);                             // set id
+        System.out.println("Bod ID: " + bob.getId()); // 2
+
+        bob.setId(23);
+
+        System.out.println("Bod ID: " + bob.getId());   // 23
+
+        alice.setId( 10);                             // set id
         alice.setFirstname("Alice");                 // set firstname
         alice.setLastname("W");                       // set lastname
 

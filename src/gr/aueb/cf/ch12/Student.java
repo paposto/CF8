@@ -10,22 +10,12 @@ package gr.aueb.cf.ch12;
 public class Student {
     private int id;
     private String firstname;
-    private  String lastname;
+    private String lastname;
 
-    /**
-     * Default constructor
-     */
     public Student() {
 
     }
 
-    /**
-     * Overloaded constructor
-     *
-     * @param id
-     * @param firstname
-     * @param lastname
-     */
     public Student(int id, String firstname, String lastname) {
         this.id = id;
         this.firstname = firstname;
@@ -36,16 +26,8 @@ public class Student {
         return id;
     }
 
-    public void setID(int id) {
+    public void setId(int id) {
         this.id = id;
-    }
-
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
     }
 
     public String getLastname() {
@@ -54,5 +36,13 @@ public class Student {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 }
