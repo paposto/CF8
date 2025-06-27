@@ -8,9 +8,9 @@ package gr.aueb.cf.ch12;
  */
 
 public class Student {
-    public int id;
-    public String firstname;
-    public String lastname;
+    private int id;
+    private String firstname;
+    private  String lastname;
 
     /**
      * Default constructor
