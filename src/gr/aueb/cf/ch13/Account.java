@@ -68,4 +68,58 @@ public class Account {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    //Public API
+
+    /**
+     * Deposits a certain amount of money.
+     * @param amount             the amount of money to be deposited.
+     * @throws Exception        if the amount is negative.
+     */
+
+    public void deposit(double amount) throws Exception {
+
+        try {
+            if ( amount < 0 ) {
+                throw new Exception("Negative amount is not valid.");
+            }
+            balance += amount;
+        } catch (Exception e) {
+            System.err.println("Negative amount= " + amount + " is not valid.");
+            throw e;
+        }
+    }
+
+    /**
+     * Withdraw an amount of money from the {@link Account}
+     * First, checks if ssn is valid by calling {@link Account#isSsnValid(String)}
+     * @param amount        the amount to withdraw.
+     * @param ssn           the give ssn.
+     * @throws Exception    if amount is negative, or balance is not sufficient or ssn is not valid.
+     */
+    public void withdraw(double amount, String ssn) throws Exception {
+        try {
+            if (amount < 0) {
+                throw new Exception("Negative amount is not valid.");
+            }
+
+            if (amount > balance) {
+                throw new Exception("Insufficient balance for withdraw.");
+            }
+
+            if (!isSsnValid(ssn)) {
+                throw new Exception("Ssn is not valid.");
+            }
+            balance -= amount;
+        } catch (Exception e) {
+            System.err.println("Withdraw failed." + e);
+            throw e;
+
+        }
+    }
+
+    private boolean isSsnValid(String ssn) {
+        return this.ssn.equals(ssn);
+    }
+
 }
