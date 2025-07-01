@@ -30,14 +30,14 @@ public class Main {
         doMovePlusOne(p2);
         doMovePlusOne(p1);
 
-        System.out.println(p1);     // η παράμετρος του println είναι σε string context.
+        System.out.println(p1);     // η παράμετρος του println είναι ένα string context.
         System.out.println(p2);
         System.out.println(p3);
     }
 
 
     public static void doMovePlusOne(Point point) {
-        point.movePlusOne();
+        point.movePlusOne();        // late-binding, @runtime
 
     }
 }
