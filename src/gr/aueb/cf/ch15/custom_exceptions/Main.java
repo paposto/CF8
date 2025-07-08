@@ -1,4 +1,8 @@
-package gr.aueb.cf.ch15;
+package gr.aueb.cf.ch15.custom_exceptions;
+
+import gr.aueb.cf.ch15.Point;
+import gr.aueb.cf.ch15.Point2D;
+import gr.aueb.cf.ch15.Point3D;
 
 public class Main {
 
