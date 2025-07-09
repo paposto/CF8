@@ -11,7 +11,7 @@ public class AbstractRectangle implements IRectangle {
 
     @Override
     public double getPerimeter() {
-        return 2 (width * height);
+        return 2 * (width * height);
     }
 
     @Override
