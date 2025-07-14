@@ -5,7 +5,7 @@ package gr.aueb.cf.ch18.singly_linked_list;
  * @param <T> παραμετρικός τύπος.
  */
 
-public class Node <T> {
+public class Node<T> {
     private T item;
     private Node<T> next;
 
@@ -29,5 +29,6 @@ public class Node <T> {
     public void setNext(Node<T> next) {
         this.next = next;
     }
+}
 
 
